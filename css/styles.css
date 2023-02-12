@@ -1,0 +1,903 @@
+
+/* Center the loader */
+#loader {
+position: absolute;
+left: 50%;
+top: 50%;
+z-index: 1;
+width: 120px;
+height: 120px;
+margin: -76px 0 0 -76px;
+border: 16px solid #f3f3f3;
+border-radius: 50%;
+border-top: 16px solid #3498db;
+-webkit-animation: spin 2s linear
+infinite;
+animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+0% { -webkit-transform: rotate(0deg);
+}
+100% { -webkit-transform:
+rotate(360deg); }
+}
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+/* Add animation to "page content" */
+
+.r{
+    color: black;
+    width: 90px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 17px;
+}
+.r:hover{
+    color: black;
+    width: 90px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 17px;
+}
+
+   
+.we{
+    color: blue;
+}
+.ta{
+    color: black;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 20px;
+}
+
+
+.lan{
+    color: black;background-color: darkcyan;border-radius: 5px 5px 5px 5px;font-size: 16px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.p{
+    font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-shadow: #999999;text-align: justify;text-justify: auto;
+}
+.ul{
+    text-align: justify;text-justify: auto;
+}
+.btn{
+    background-color:rgb(74, 142, 245);text-align: left;text-decoration: none;color: #000;
+}
+.btn:hover{
+    background-color:rgb(74, 142, 245);text-align: left;text-decoration: none;color: #000;
+}
+@media screen and (max-width:580px) and(min-width:299px)
+ {
+  p{
+    font-size:20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+  
+    
+  }
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Shadows+Into+Light&display=swap");
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    line-height: 1.5em;
+}
+
+:root {
+    --body-bg: 
+#fafcf5;
+    --font-family: "Open Sans", sans-serif;
+    --font-color: 
+#222222;
+    --prime-color: 
+#fb7a05;
+}
+
+html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-wrap: break-word;
+    font-family: var(--font-family);
+    color: var(--font-color);
+    background-color: var(--body-bg);
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    background-color: 
+white;
+    border-bottom: 1px solid 
+rgba(0, 0, 0, 0.1);width: 100%; margin-left: auto;
+}
+.header .wrap {
+    max-width: 1400px;
+    height: 80px;
+    padding: 0 30px 0 5px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(202, 197, 193, 0.288);
+    
+}
+.header .wrap:hover {
+    text-decoration: none;color: #000;
+    
+}
+
+.logo {
+    align-items: center;
+}
+.logo a {
+    font-size: 2rem;
+    font-weight: bold;
+    align-items: center;
+    font-family: "Shadows Into Light", cursive;
+}
+.logo a span {
+    color: var(--prime-color);
+}
+.logo a::before {
+    content: "";
+    margin-right: 7px;
+    width: 50px;
+    height: 50px;
+    background: url("./lemon.png") no-repeat center;
+    background-size: 50px;
+}
+
+.icon-bar {
+    display: none;
+}
+
+.navbar .close-nav {
+    display: none;
+}
+
+.lis{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin-left: 70px;font-size: 20px;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 105%;
+    align-items: center;
+}
+
+.navbar li {
+    padding: 0 0.6em;
+}
+
+.navbar a {
+    font-size: 1.125rem;
+    display: block;
+    padding: 0.3em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.navbar a:hover {
+    color: black;font-size: 23px;
+}
+.rw{
+    margin-left: 22%;
+}
+@media (max-width: 650px) {
+    .container {
+        font-size: 1rem;
+    }
+    .rw{
+        margin-left: 12%;
+    }
+    .icon-bar {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--prime-color);
+        width: 50px;
+        height: 50px;
+        padding: 0 12px;
+        border-radius: 3px;
+    }
+    .icon-bar:hover {
+        background-color: 
+#fffaf6;
+    }
+    .icon-bar span {
+        border-top: 2px solid var(--font-color);
+        width: 100%;
+    }
+    .icon-bar span::before,
+    .icon-bar span::after {
+        content: "";
+        border-bottom: 2px solid var(--font-color);
+        display: block;
+        height: 8px;
+    }
+    .overflow-none {
+        overflow: hidden;
+    }
+    .navbar {
+        position: fixed;
+        width: 100%;
+        height: 40%;
+        transition: 0.2s linear;
+        transform: scale(0);
+        top: 0;
+        left: 0;
+        background-color: 
+#fafcf5;
+        z-index: 9;
+    }
+    .navbar .close-nav {
+        all: unset;
+        font-size: 2.5rem;
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        cursor: pointer;
+    }
+    .navbar .close-nav:hover {
+        color: 
+#999999;
+    }
+    .navbar ul {
+        flex-direction:column;
+        align-items: center;
+        padding: 2rem;
+        margin-left: 80px;
+    }
+    .navbar li {
+        padding: 0.7rem 0;
+    }
+    .navbar a {
+        font-size: 20px;
+        text-transform: uppercase;
+
+    }
+    .navbar a:hover {
+        text-decoration: underline;
+        font-size: 22px;
+    }
+    .nav-scale {
+        transform: scale(1) !important;
+    }
+}
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+}
+/* Float four columns side by side */
+.column {
+ float: center;
+ width: 25%;
+ padding-left: 20px;
+
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -20px;}
+/* Clear floats after the columns */
+.row:after {
+content: "";
+ display: table;
+ clear: both;
+}
+.s{
+    margin-left: 100px;
+}
+/* Style the counter cards */
+.card {
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect
+*/
+padding: 5px;
+ text-align: left;
+ background-color: #f1f1f1;
+}
+
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px)  {
+ .column {
+ width: 80%;
+display: block;
+ margin-bottom: 20px;
+ margin-left: 40px;
+ padding-left: 0;
+ 
+ 
+}
+.footer{
+    height: 100%;
+    background-color: #000;
+}
+
+.ii{
+    width: 50px;
+}
+.po{
+    width: 150%;height: auto;
+}
+.btns {
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color: rgb(10, 10, 10);
+    color: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  }
+.s{
+    margin-left: 50px;
+    padding-left: 0;
+}
+.tbl{
+    width: 100%;height: auto;
+}
+
+}
+
+
+
+
+
+
+@media (max-width: 650px) {
+    .co {
+width: 100%;height: auto;font-size: 17px;flex-wrap: wrap;margin-right:60px ;
+    }
+    .mg{
+        width: 80%;
+    }
+    .ig{
+        width: 87%;height: auto;
+    }
+    .col{
+    float: center;text-align: center;
+}}
+@media (max-width: 950px) {.co{
+    width: 100%;height: auto;font-size: 17px;flex-wrap: wrap;
+}
+.hh{
+    font-size: 30px;
+}
+.ig{
+    width: 80%;height: auto;
+}}
+@media (max-width: 1250px) {.co{
+    width: 90%;height: auto;font-size: 17px;flex-wrap: wrap;}}
+.a:hover{
+    text-decoration: none;color: #000;
+}
+.accordion {
+    background-color: #eee;
+    color: rgb(10, 14, 248);
+     cursor: pointer;
+     padding: 18px;
+     width: 80%;
+    text-align: left;
+    border: none;
+    outline: none;
+     transition: 0.4s;
+     margin-left: 10%;
+     border-radius: 10%;
+     border-style: outset;
+    }
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+        margin-left: 10%;
+        }
+
+        #myBtn {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed/sticky position */
+             bottom: 20px; /* Place the button at the bottom of the page */
+            right: 30px; /* Place the button 30px from the right */
+             z-index: 99; /* Make sure it does not overlap */
+             border: none; /* Remove borders */
+             outline:auto; /* Remove outline */
+            background-color: rgb(22, 22, 22); /* Set a background color */
+             color: white; /* Text color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+             padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+             font-size: 18px; /* Increase font size */
+            }
+            #myBtn:hover {
+            background-color: #555; /* Add a dark-grey background on hover */
+            }
+            .gfg {
+                
+                position: relative;
+
+            }
+      
+            .first-txt {
+                position: absolute;
+                bottom: 25px;
+                left: 43.5%;
+                color: rgb(15, 15, 15);font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 45px;
+                background-color:teal;
+                border-radius: 10%;
+                padding-left: 5px;padding-right: 5px;
+            }
+      
+            .second-txt {
+                position: absolute;
+                bottom: 180px;
+                left: 42.5%;
+                color: #eee;
+            } 
+          
+              
+              /* Center website */
+             
+              
+              h1 {
+                font-size: 50px;
+                word-break: break-all;
+              }
+              
+              .ro {
+            margin-left: 8%;
+              }
+              
+              /* Add padding BETWEEN each column (if you want) */
+              .ro,
+              .ro > .colum {
+                padding: 8px;
+                margin-left: 20px;
+              }
+              
+              /* Create four equal columns that floats next to each other */
+              .colum {
+                float: left;
+                width: 30%;
+              }
+              
+              /* Clear floats after rows */
+              .ro:after {
+                content: "";
+                display: table;
+                clear: both;
+              }
+              
+              /* Content */
+              .conten {
+                background-color: white;
+                padding: 10px;
+              }
+              
+              /* Responsive layout - makes a two column-layout instead of four columns */
+              @media screen and (max-width: 900px) {
+                .colum {
+                  width: 50%;
+                }
+              }
+              
+              /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+              @media screen and (max-width: 600px) {
+                .colum {
+                  width: 100%;
+                }
+                .second-txt {
+                    position: absolute;
+                    bottom: 150px;
+                    left: 38%;
+                    color: #eee;
+                } 
+              }
+                
+            
+              #myImg {
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.3s;
+              }
+              
+              #myImg:hover {opacity: 0.7;}
+              
+              /* The Modal (background) */
+              .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+              }
+              
+              /* Modal Content (Image) */
+              .modal-content {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+              }
+              
+              /* Caption of Modal Image (Image Text) - Same Width as the Image */
+              #caption {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+                text-align: center;
+                color: #ccc;
+                padding: 10px 0;
+                height: 150px;
+              }
+              
+              /* Add Animation - Zoom in the Modal */
+              .modal-content, #caption {
+                animation-name: zoom;
+                animation-duration: 0.6s;
+              }
+              
+              @keyframes zoom {
+                from {transform:scale(0)}
+                to {transform:scale(1)}
+              }
+              
+              /* The Close Button */
+              .close {
+                position: absolute;
+                top: 15px;
+                right: 35px;
+                color: #f1f1f1;
+                font-size: 40px;
+                font-weight: bold;
+                transition: 0.3s;
+              }
+              
+              .close:hover,
+              .close:focus {
+                color: #bbb;
+                text-decoration: none;
+                cursor: pointer;
+              }
+              
+              /* 100% Image Width on Smaller Screens */
+              @media only screen and (max-width: 700px){
+                .modal-content {
+                  width: 100%;
+                }
+                .hh{
+                    font-size: 40px;
+                }
+              }
+              .h{
+                color: #3498db;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+              }
+              .p1{
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+              }
+              .third-txt {
+                position: absolute;
+                bottom: 0;
+                margin-top: 30px;
+                color: #eee;
+                background-color: #fb7a05;
+            } 
+            .rowss{
+                margin: 8px -16px;
+                width: 100%;
+              }
+              
+              /* Add padding BETWEEN each column (if you want) */
+             
+              
+              /* Create three equal columns that floats next to each other */
+              .columnss {
+                float: left;
+                width: 28.33%;
+                display: none; /* Hide columns by default */
+              }
+              
+              /* Clear floats after rows */
+              .rowss:after {
+                content: "";
+                display: table;
+                clear: both;
+              }
+              
+              /* Content */
+              .contents {
+                background-color: white;
+                padding: 16px;
+                
+              }
+              
+              /* The "show" class is added to the filtered elements */
+              .show {
+                display: block;
+              }
+              
+              /* Style the buttons */
+              .btns {
+                border: none;
+                outline: none;
+                padding: 12px 16px;
+                background-color: rgb(10, 10, 10);
+                color: #ccc;
+                font-family: Arial, Helvetica, sans-serif;
+                cursor: pointer;
+              }
+              
+              /* Add a grey background color on mouse-over */
+              .btns:hover {
+                background-color: rgb(180, 177, 177);
+                color: black;
+              }
+              
+              /* Add a dark background color to the active button */
+              .btn.active {
+                background-color: #666;
+                 color: rgb(24, 23, 23);
+              }           
+
+
+.par{
+    font-size: 22px;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.ab{
+    color: #ccc;
+}
+.abs{
+color:rgb(60, 151, 187);font-size: 20px;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed{
+	
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 40px 30px;
+       background-color: rgb(36, 35, 35);
+      
+       
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+  margin-left: 20px;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+.na{
+    font-size: 18px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer-distributed .footer-company-name{
+	color:  rgb(245, 242, 242);
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #f6f8fa;
+	font-size: 17px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+        background-color: rgb(36, 35, 35);
+	}
+    .ff{
+        height: auto;
+    }
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+
